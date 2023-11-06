@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rlay"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/ic_launcher_foreground"
+            />
+
+        <EditText
+            android:id="@+id/luser"
+            android:background="@drawable/etstyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:hint="Adresse mail"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/lpass"
+            android:background="@drawable/etstyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/showPass"
+            android:paddingLeft="8dp"
+            android:text="Affichez mot de passe"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="showPass"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnstylesel"
+            android:clickable="true"
+            android:text="Se connecter"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="12sp"
+            android:clickable="true"
+            android:gravity="left"
+            android:text="Mot de passe oublé?" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/rlay"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+                                                                                                                    "
+            android:background="@drawable/etstyle"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regis"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Vous n'avez pas de compte ? Créez-en un !"/>
+    </LinearLayout>
+</RelativeLayout>
